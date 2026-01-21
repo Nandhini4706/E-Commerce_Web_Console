@@ -6,8 +6,17 @@ public class Billing {
     private int billingId;
     private int totalPrice;
 
+    public int getBillingId() {
+        return billingId;
+    }
+
+    public int getTotalPrice() {
+        return totalPrice;
+    }
+
     public int calculatePrice(Product product, int quantity){
         totalPrice= product.getProductPrice() * quantity;
         return totalPrice;
     }
+
 }
