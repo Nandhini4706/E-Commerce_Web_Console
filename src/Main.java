@@ -32,10 +32,11 @@ public class Main{
                 if (password.matches(pass)) {
                     System.out.println("Password Created Successfully");  // dbAS34@ASsd34!
                    int count=1;
+                   int count1=1;
                     Login login=new Login(email,password,count++);
                     System.out.println("Enter User Name: ");
                     String name=sc.nextLine();
-                    User user=new User(login, count++,name);
+                    User user=new User(login, count1++,name);
 
                     boo = true;
 
