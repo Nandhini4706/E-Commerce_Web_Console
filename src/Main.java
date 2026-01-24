@@ -22,7 +22,7 @@ public class Main{
             String regex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
 
             if (email.matches(regex)) {
-                System.out.println("Login Successfully✅"); //
+                System.out.println("Login Successfully✅"); // bscbujs093@gmail.com
                 System.out.println("Enter Password");
 
                 String password = sc.nextLine();
@@ -47,7 +47,19 @@ public class Main{
                 System.out.println("Invalid Email");
             }
             if(boo){
-                System.out.println("Welcome To E-commerce");
+                System.out.println("Welcome To E-commerce ");
+                System.out.println("-----------------------------------------------------------------------------------------------");
+                System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
+                System.out.println("-----------------------------------------------------------------------------------------------");
+
+                for(Product p :map.values()){
+
+                    System.out.println("|      " +p.getProductId() +"     |       " +p.getProductName() +"    |               " +p.getProductDiscription() +"             |   " +p.getProductPrice()+"      |");
+
+                }
+                System.out.println("-----------------------------------------------------------------------------------------------");
+
+
                 break;
 
             }
