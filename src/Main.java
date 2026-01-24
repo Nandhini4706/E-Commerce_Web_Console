@@ -11,14 +11,18 @@ public class Main{
         ProductService ps = new ProductService();
         map.put(1, new Product(1, "Samsung", "Samsung mobile 5G", 120000));
         map.put(2, new Product(2, "Vivo", "Vivo mobile 5G", 150000));
+
+        boolean boo = false;
         while (true) {
+            System.out.println("------------------------Welcome To Our WebSite------------------------");
+
             System.out.println("Enter user Email: ");
-            String str = sc.nextLine();
-            boolean boo = "";
+            String email = sc.nextLine();
+
             String regex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
 
-            if (str.matches(regex)) {
-                System.out.println("Login Successfully✅");
+            if (email.matches(regex)) {
+                System.out.println("Login Successfully✅"); //
                 System.out.println("Enter Password");
 
                 String password = sc.nextLine();
@@ -26,20 +30,26 @@ public class Main{
                 String pass = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
 
                 if (password.matches(pass)) {
-                    System.out.println("Password Created Successfully");
+                    System.out.println("Password Created Successfully");  // dbAS34@ASsd34!
+                   int count=1;
+                    Login login=new Login(email,password,count++);
+                    System.out.println("Enter User Name: ");
+                    String name=sc.nextLine();
+                    User user=new User(login, count++,name);
+
                     boo = true;
-                    continue;
+
                 } else {
                     System.out.println("Password is weak");
                 }
             } else {
                 System.out.println("Invalid Email");
             }
-            if (boo == true) {
-                System.out.println("Welcome to E-Commerce");
+            if(boo){
+                System.out.println("Welcome To E-commerce");
+                break;
 
             }
         }
-    }
     }
 }
