@@ -69,7 +69,8 @@ public class Main{
                     case 2:
                         map.put(1, new Product(201,"Refrigerator","Samsung",350000));
                         for(Product p:map.values()){
-                            if(map.getKey()>=1){
+                            if(map.containsKey()>=1){
+
                                 System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
 
                             }
