@@ -7,12 +7,13 @@ import Services.ProductService;
 public class Main{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        HashMap<Integer, Product> map = new HashMap<>();
+        HashMap<Integer, Product> mobile = new HashMap<>();
       //  ProductService ps = new ProductService();
 
-        map.put(1, new Product(1, "Samsung", "Samsung mobile 5G", 120000));
-        map.put(2, new Product(2, "Vivo", "Vivo mobile 5G", 150000));
-
+        mobile.put(1, new Product(1, "Samsung", "Samsung mobile 5G", 120000));
+        mobile.put(2, new Product(2, "Vivo", "Vivo mobile 5G", 150000));
+       HashMap<Integer, Product> furniture=new HashMap<>();
+       furniture.put(1,new Product(1,"Bed","King size",20000));
         boolean boo = false;
         while (true) {
             System.out.println("------------------------Welcome To Our WebSite------------------------");
@@ -53,28 +54,35 @@ public class Main{
                 System.out.println("2. Furniture");
                 System.out.println("3. Cosmetic");
                 System.out.println("4. Dress");
-                System.out.println("-----------------------------------------------------------------------------------------------");
+             /*   System.out.println("-----------------------------------------------------------------------------------------------");
                 System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
-                System.out.println("-----------------------------------------------------------------------------------------------");
-              int num=sc.nextInt();
+                System.out.println("-----------------------------------------------------------------------------------------------"); */
+              System.out.println("Enter choice: ");
+                int num=sc.nextInt();
                 switch(num) {
                     case 1:
-                    for (Product p : map.values()) {
+                        System.out.println("-----------------------------------------------------------------------------------------------");
+                        System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
+                        System.out.println("-----------------------------------------------------------------------------------------------");
+                    for (Product p : mobile.values()) {
+                        if (mobile.get()) {
+                            System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
 
-                        System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
-
+                        }
                     }
                     System.out.println("-----------------------------------------------------------------------------------------------");
                         break;
                     case 2:
-                        map.put(1, new Product(201,"Refrigerator","Samsung",350000));
-                        for(Product p:map.values()){
-                            if(map.containsKey()>=1){
+                      //  mobile.put(1, new Product(201,"Refrigerator","Samsung",350000));
+                        System.out.println("-----------------------------------------------------------------------------------------------");
+                        System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
+                        System.out.println("-----------------------------------------------------------------------------------------------");
+                        for(Product p:furniture.values()){
 
                                 System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
 
-                            }
-                        }
+                        }System.out.println("-----------------------------------------------------------------------------------------------");
+
                 }
 
 
