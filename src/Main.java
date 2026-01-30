@@ -8,7 +8,7 @@ public class Main{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Product> mobile = new ArrayList<>();
-      //  ProductService ps = new ProductService();
+
 
         mobile.add( new Product(1, "Samsung", "Samsung mobile 5G", 120000));
         mobile.add( new Product(2, "Vivo", "Vivo mobile 5G", 150000));
@@ -54,17 +54,13 @@ public class Main{
                 System.out.println("2. Furniture");
                 System.out.println("3. Cosmetic");
                 System.out.println("4. Dress");
-             /*   System.out.println("-----------------------------------------------------------------------------------------------");
-                System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
-                System.out.println("-----------------------------------------------------------------------------------------------"); */
+                System.out.println("5.Exit");
               System.out.println("Enter choice: ");
                 int num=sc.nextInt();
                 switch(num) {
                     case 1:
                         int index=0;
-                     /*   System.out.println("-----------------------------------------------------------------------------------------------");
-                        System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
-                        System.out.println("-----------------------------------------------------------------------------------------------");*/
+
                         while(index <mobile.size()) {
                         Product p=mobile.get(index);
                             System.out.println("-----------------------------------------------------------------------------------------------");
@@ -88,10 +84,10 @@ public class Main{
                             System.out.println("End page \uD83D\uDE4C");
                         }
                    }
-                   // System.out.println("-----------------------------------------------------------------------------------------------");
+
                         break;
                     case 2:
-                      //  mobile.put(1, new Product(201,"Refrigerator","Samsung",350000));
+
                         System.out.println("-----------------------------------------------------------------------------------------------");
                         System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
                         System.out.println("-----------------------------------------------------------------------------------------------");
@@ -101,6 +97,14 @@ public class Main{
 
                         }System.out.println("-----------------------------------------------------------------------------------------------");
 
+                    case 5:
+                        System.out.println("Do you want to Exit!!!");
+                        String s1=sc.next();
+                        if(s1.contains("yes")){
+                            return;
+                        }else{
+                            continue;
+                        }
                 }
 
 
