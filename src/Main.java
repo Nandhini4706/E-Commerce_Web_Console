@@ -8,14 +8,17 @@ public class Main{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Product> mobile = new ArrayList<>();
-
-
         mobile.add( new Product(1, "Samsung", "Samsung mobile 5G", 120000));
         mobile.add( new Product(2, "Vivo", "Vivo mobile 5G", 150000));
-       ArrayList<Product> furniture=new ArrayList<>();
-       furniture.add(new Product(1,"Bed","King size",20000));
-        ArrayList<Product> Cosmetics=new ArrayList<>();
-        Cosmetics.add(new Product(1,"Mamaearth Cleanse & Glow Combo","Vitamin C, Suitable for all Skin types",600));
+
+        ArrayList<Product> furniture=new ArrayList<>();
+        furniture.add(new Product(1,"Bed","King size",20000));
+
+        ArrayList<Product>  Cosmetics=new ArrayList<>();
+        Cosmetics.add(new Product(1,"Mamaearth","Vitamin C,Suitable for all skin types",700));
+
+
+
         boolean boo = false;
         while (true) {
             System.out.println("------------------------Welcome To Our WebSite------------------------");
@@ -100,6 +103,17 @@ public class Main{
                         }System.out.println("-----------------------------------------------------------------------------------------------");
 
                     case 3:
+
+                        System.out.println("-----------------------------------------------------------------------------------------------");
+                        System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
+                        System.out.println("-----------------------------------------------------------------------------------------------");
+                        for(Product p:Cosmetics){
+
+                            System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
+
+                        }System.out.println("-----------------------------------------------------------------------------------------------");
+
+                    case 4:
 
                         System.out.println("-----------------------------------------------------------------------------------------------");
                         System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
