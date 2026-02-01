@@ -16,6 +16,8 @@ public class Main{
 
         ArrayList<Product>  Cosmetics=new ArrayList<>();
         Cosmetics.add(new Product(1,"Mamaearth","Vitamin C,Suitable for all skin types",700));
+        ArrayList<Product> Dress=new ArrayList<>();
+        Dress.add(new Product(1,"Kurthi Set","Cotton",500));
 
 
 
@@ -118,7 +120,7 @@ public class Main{
                         System.out.println("-----------------------------------------------------------------------------------------------");
                         System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
                         System.out.println("-----------------------------------------------------------------------------------------------");
-                        for(Product p:Cosmetics){
+                        for(Product p:Dress){
 
                             System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
 
