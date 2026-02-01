@@ -29,7 +29,7 @@ public class Main{
 
                 String password = sc.nextLine();
 
-                String pass = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
+                String pass = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}";
 
                 if (password.matches(pass)) {
                     System.out.println("Password Created Successfully");  // dbAS34@ASsd34!
@@ -63,9 +63,9 @@ public class Main{
 
                         while(index <mobile.size()) {
                         Product p=mobile.get(index);
-                            System.out.println("-----------------------------------------------------------------------------------------------");
+                            System.out.println("----------------------------------------------------------------------------------------------");
                             System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
-                            System.out.println("-----------------------------------------------------------------------------------------------");
+                            System.out.println("----------------------------------------------------------------------------------------------");
                             System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
                             System.out.println("-----------------------------------------------------------------------------------------------");
 
