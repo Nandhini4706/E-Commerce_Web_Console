@@ -14,6 +14,8 @@ public class Main{
         mobile.add( new Product(2, "Vivo", "Vivo mobile 5G", 150000));
        ArrayList<Product> furniture=new ArrayList<>();
        furniture.add(new Product(1,"Bed","King size",20000));
+        ArrayList<Product> Cosmetics=new ArrayList<>();
+        Cosmetics.add(new Product(1,"Mamaearth Cleanse & Glow Combo","Vitamin C, Suitable for all Skin types",600));
         boolean boo = false;
         while (true) {
             System.out.println("------------------------Welcome To Our WebSite------------------------");
@@ -97,13 +99,24 @@ public class Main{
 
                         }System.out.println("-----------------------------------------------------------------------------------------------");
 
+                    case 3:
+
+                        System.out.println("-----------------------------------------------------------------------------------------------");
+                        System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
+                        System.out.println("-----------------------------------------------------------------------------------------------");
+                        for(Product p:Cosmetics){
+
+                            System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
+
+                        }System.out.println("-----------------------------------------------------------------------------------------------");
+
+
                     case 5:
                         System.out.println("Do you want to Exit!!!");
                         String s1=sc.next();
                         if(s1.contains("yes")){
+                            System.out.println("----------------------Developed BY Nandhini---------------------------");
                             return;
-                        }else{
-                            continue;
                         }
                 }
 
