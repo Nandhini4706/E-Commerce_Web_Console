@@ -96,7 +96,7 @@ public class Main{
                     case 2:
 
                         System.out.println("-----------------------------------------------------------------------------------------------");
-                        System.out.println("| Product S.No|   Product Name   |                   Description              |     Price     |");
+                        System.out.println("| Product S.No |   Product Name   |                   Description              |     Price     |");
                         System.out.println("-----------------------------------------------------------------------------------------------");
                         for(Product p:furniture){
 
@@ -107,7 +107,7 @@ public class Main{
                     case 3:
 
                         System.out.println("-----------------------------------------------------------------------------------------------");
-                        System.out.println("| Product S.No|   Product Name   |                   Description              |     Price     |");
+                        System.out.println("| Product S.No |   Product Name   |                   Description              |     Price     |");
                         System.out.println("-----------------------------------------------------------------------------------------------");
                         for(Product p:Cosmetics){
 
@@ -118,7 +118,7 @@ public class Main{
                     case 4:
 
                         System.out.println("-----------------------------------------------------------------------------------------------");
-                        System.out.println("| Product S.No|   Product Name   |                   Description              |     Price     |");
+                        System.out.println("| Product S.No |   Product Name   |                   Description              |     Price     |");
                         System.out.println("-----------------------------------------------------------------------------------------------");
                         for(Product p:Dress){
 
