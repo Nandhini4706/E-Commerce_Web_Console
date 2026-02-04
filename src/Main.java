@@ -96,10 +96,19 @@ public class Main{
                     case 2:
 
                         System.out.println("-----------------------------------------------------------------------------------------------");
-                        System.out.println("| Product S.No |   Product Name   |                   Description              |     Price     |");
+                        System.out.printf("| %-12s | %-16s | %-40s | %-12s |\n",
+                                "Product S.No", "Product Name", "Description", "Price");
+                        //System.out.println("| Product S.No |   Product Name   |                   Description              |     Price     |");
                         System.out.println("-----------------------------------------------------------------------------------------------");
                         for(Product p:furniture){
 
+                         /*   System.out.printf("| %-12d | %-16s | %-40s | %-12.2f |\n",
+                                    p.getProductId(),
+                                    p.getProductName(),
+                                    p.getProductDiscription(),
+                                    p.getProductPrice());
+
+                          */
                                 System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
 
                         }System.out.println("-----------------------------------------------------------------------------------------------");
