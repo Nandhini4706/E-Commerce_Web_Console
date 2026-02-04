@@ -23,7 +23,7 @@ public class Main{
 
         boolean boo = false;
         while (true) {
-            System.out.println("------------------------Welcome To Our WebSite------------------------");
+            System.out.println("-------------------------Welcome To Our WebSite-------------------------");
 
             System.out.println("Enter user Email: ");
             String email = sc.nextLine();
