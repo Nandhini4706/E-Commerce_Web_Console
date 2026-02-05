@@ -140,7 +140,7 @@ public class Main{
                         System.out.println("Do you want to Exit!!!");
                         String s1=sc.next();
                         if(s1.contains("yes")){
-                            System.out.println("----------------------Developed BY Nandhini---------------------------");
+                            System.out.println("------------------------Developed BY Nandhini---------------------------");
                             return;
                         }
                 }
