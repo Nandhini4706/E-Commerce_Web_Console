@@ -33,7 +33,7 @@ public class Main{
             if (email.matches(regex)) {
                 System.out.println("Login Successfully✅"); // bscbujs093@gmail.com
                 System.out.println("Enter Password");
-
+                 String star;
                 String password = sc.nextLine();
 
                 String pass = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}";
