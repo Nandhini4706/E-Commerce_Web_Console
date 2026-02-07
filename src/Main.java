@@ -98,7 +98,7 @@ public class Main{
                         System.out.println("-----------------------------------------------------------------------------------------------");
                         System.out.printf("| %-12s | %-16s | %-40s | %-12s |\n",
                                 "Product S.No", "Product Name", "Description", "Price");
-                        //System.out.println("| Product S.No |   Product Name   |                   Description              |     Price     |");
+
                         System.out.println("-----------------------------------------------------------------------------------------------");
                         for(Product p:furniture){
 
