@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.*;
 import Model.Login;
 import Model.User;
@@ -8,8 +7,10 @@ public class Main{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Product> mobile = new ArrayList<>();
-        mobile.add( new Product(1, "Samsung", "Samsung mobile 5G", 120000));
-        mobile.add( new Product(2, "Vivo", "Vivo mobile 5G", 150000));
+        mobile.add( new Product(1, "Samsung", "Samsung A14 mobile 5G", 8500));
+        mobile.add( new Product(2, "Vivo", "Vivo mobile 5G", 18000));
+        mobile.add(new Product(3,"Redmi","Redmi A4 5G",10000));
+        mobile.add(new Product(4,"Motorola","Motorola Edge 5G",19426));
 
         ArrayList<Product> furniture=new ArrayList<>();
         furniture.add(new Product(1,"Bed","King size",20000));
@@ -33,7 +34,6 @@ public class Main{
             if (email.matches(regex)) {
                 System.out.println("Login Successfully✅"); // bscbujs093@gmail.com
                 System.out.println("Enter Password");
-
                 String password = sc.nextLine();
 
                 String pass = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}";
