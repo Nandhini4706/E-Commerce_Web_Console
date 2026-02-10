@@ -84,9 +84,9 @@ public class Main{
                                 System.out.println("How much qty:");
                                 int n=sc.nextInt();
                                 double bill=Product;
-                                System.out.println("---------------------------");
+                                System.out.println("----------------------------");
                                 System.out.println("|Total Payment: "+bill +" |");
-                                System.out.println("---------------------------");
+                                System.out.println("----------------------------");
                                 System.out.println();
                                 System.out.println("Payment Method: ");
                                 System.out.println("1.Gpay");
