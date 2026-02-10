@@ -2,6 +2,7 @@ import java.util.*;
 import Model.Login;
 import Model.User;
 import Model.Product;
+import Services.Billing;
 import Services.ProductService;
 public class Main{
     public static void main(String[] args) {
@@ -67,7 +68,8 @@ public class Main{
                 switch(num) {
                     case 1:
                         int index=0;
-
+                        double totalbill=0;
+                        sc.nextLine();
                         while(index <mobile.size()) {
                         Product p=mobile.get(index);
                             System.out.println("----------------------------------------------------------------------------------------------");
@@ -75,6 +77,27 @@ public class Main{
                             System.out.println("----------------------------------------------------------------------------------------------");
                             System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
                             System.out.println("-----------------------------------------------------------------------------------------------");
+
+                            System.out.println("   |   Buy(B)  |");
+                            String buy=sc.nextLine();
+                            if(buy.equalsIgnoreCase("B")){
+                                System.out.println("How much qty:");
+                                int n=sc.nextInt();
+                                double bill=Product;
+                                System.out.println("---------------------------");
+                                System.out.println("|Total Payment: "+bill +" |");
+                                System.out.println("---------------------------");
+                                System.out.println();
+                                System.out.println("Payment Method: ");
+                                System.out.println("1.Gpay");
+                                System.out.println("2.Cash On Delivery");
+                                int Pay=sc.nextInt();
+                                if(Pay==1){
+                                    System.out.println("Payment SuccessFully");
+                                    System.out.println();
+                                }
+
+                            }
 
                             System.out.println("To move next page -> enter '+' symbol");
                         System.out.println("To move previous page -> enter '-' symbol");
