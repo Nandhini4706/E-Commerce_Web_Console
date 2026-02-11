@@ -24,7 +24,7 @@ public class Main{
         Billing billing=new Billing();
 
         boolean boo = false;
-        System.out.println("--------------------------Welcome To Our WebSite--------------------------");
+        System.out.println("-------------------------Welcome To Our WebSite-------------------------");
 
         System.out.println("Enter user Email: ");
         String email = sc.nextLine();
