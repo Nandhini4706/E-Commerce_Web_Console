@@ -70,11 +70,11 @@ public class Main{
                 int num=sc.nextInt();
                 switch(num) {
                     case 1:
-                        int index=0;
-                        double totalbill=0;
+                        int index = 0;
+                        double totalbill = 0;
                         sc.nextLine();
-                        while(index <mobile.size()) {
-                        Product p=mobile.get(index);
+                        while (index < mobile.size()) {
+                            Product p = mobile.get(index);
                             System.out.println("----------------------------------------------------------------------------------------------");
                             System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
                             System.out.println("----------------------------------------------------------------------------------------------");
@@ -87,159 +87,279 @@ public class Main{
                             System.out.println();
                             System.out.println("To move next page -> enter '+' symbol");
                             System.out.println("To move previous page -> enter '-' symbol");
-                            String buy=sc.nextLine();
-                            if(buy.equalsIgnoreCase("B")){
+                            String buy = sc.nextLine();
+                            if (buy.equalsIgnoreCase("B")) {
                                 System.out.println("How much qty:");
-                                int n=sc.nextInt();
+                                int n = sc.nextInt();
                                 sc.nextLine();
-                                double bill=billing.calculatePrice(p,n);
-                                totalbill=totalbill+bill;
+                                double bill = billing.calculatePrice(p, n);
+                                totalbill = totalbill + bill;
                                 System.out.println("---------------------------");
-                                System.out.println("|Total Payment: "+totalbill +" |");
+                                System.out.println("|Total Payment: " + totalbill + " |");
                                 System.out.println("---------------------------");
                                 System.out.println();
                                 System.out.println("Payment Method: ");
                                 System.out.println("1.Gpay");
                                 System.out.println("2.Cash On Delivery");
-                                int Pay=sc.nextInt();
+                                int Pay = sc.nextInt();
                                 sc.nextLine();
-                                if(Pay==1){
+                                if (Pay == 1) {
                                     System.out.println("Payment SuccessFully");
                                     System.out.println("Order Will Delivery as Soon...");
                                     System.out.println();
                                     System.out.println();
                                     System.out.println("Do you want to exit");
-                                    String sug=sc.nextLine();
-                                    if(sug.equalsIgnoreCase("yes")){
+                                    String sug = sc.nextLine();
+                                    if (sug.equalsIgnoreCase("yes")) {
                                         return;
-                                    }else{
+                                    } else {
                                         continue;
                                     }
                                 }
-                                if(Pay==2){
+                                if (Pay == 2) {
                                     System.out.println("Your Order Is Placed!!!");
                                     System.out.println("Order Will Delivery as Soon...");
                                     System.out.println("Do you want to exit");
-                                    String sug=sc.nextLine();
-                                    if(sug.equalsIgnoreCase("yes")){
+                                    String sug = sc.nextLine();
+                                    if (sug.equalsIgnoreCase("yes")) {
                                         return;
-                                    }else{
+                                    } else {
                                         continue;
                                     }
                                 }
                             }
 
-                        //String sym=sc.next();
-                        if(buy.contains("+")) {
-                            index++;
-                        }else if(buy.contains("-")){
-                            index--;
-                        }else{
-                            break;
+                            //String sym=sc.next();
+                            if (buy.contains("+")) {
+                                index++;
+                            } else if (buy.contains("-")) {
+                                index--;
+                            } else {
+                                break;
+                            }
+                            if (index >= mobile.size()) {
+                                System.out.println("End page \uD83D\uDE4C");
+                            }
                         }
-                        if(index>=mobile.size()){
-                            System.out.println("End page \uD83D\uDE4C");
-                        }
-                   }
 
                         break;
                     case 2:
-                        int index=0;
-                        double totalbill=0;
+                        int index1 = 0;
+                        double totalbill1 = 0;
                         sc.nextLine();
-                        System.out.println("-----------------------------------------------------------------------------------------------");
-                        System.out.printf("| %-12s | %-16s | %-40s | %-12s |\n",
-                                "Product S.No", "Product Name", "Description", "Price");
-
-                        System.out.println("-----------------------------------------------------------------------------------------------");
-                        for(Product p:furniture){
-                                System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
-
-                        }System.out.println("-----------------------------------------------------------------------------------------------");
-                        System.out.println();
-                        System.out.println("                                                                                  ------------");
-                        System.out.println("                                                                                  |   Buy(B)  |");
-                        System.out.println("                                                                                  ------------");
-                        System.out.println();
-                        System.out.println("To move next page -> enter '+' symbol");
-                        System.out.println("To move previous page -> enter '-' symbol");
-                        String buy=sc.nextLine();
-                        if(buy.equalsIgnoreCase("B")){
-                            System.out.println("How much qty:");
-                            int n=sc.nextInt();
-                            sc.nextLine();
-                            double bill=billing.calculatePrice(p,n);
-                            totalbill=totalbill+bill;
-                            System.out.println("---------------------------");
-                            System.out.println("|Total Payment: "+totalbill +" |");
-                            System.out.println("---------------------------");
+                        while (index1 < furniture.size()) {
+                            Product p = furniture.get(index1);
+                            System.out.println("----------------------------------------------------------------------------------------------");
+                            System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
+                            System.out.println("----------------------------------------------------------------------------------------------");
+                            System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "|               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
+                            System.out.println("-----------------------------------------------------------------------------------------------");
                             System.out.println();
-                            System.out.println("Payment Method: ");
-                            System.out.println("1.Gpay");
-                            System.out.println("2.Cash On Delivery");
-                            int Pay=sc.nextInt();
-                            sc.nextLine();
-                            if(Pay==1){
-                                System.out.println("Payment SuccessFully");
-                                System.out.println("Order Will Delivery as Soon...");
+                            System.out.println("                                                                                  ------------");
+                            System.out.println("                                                                                  |   Buy(B)  |");
+                            System.out.println("                                                                                  ------------");
+                            System.out.println();
+                            System.out.println("To move next page -> enter '+' symbol");
+                            System.out.println("To move previous page -> enter '-' symbol");
+                            String buy = sc.nextLine();
+                            if (buy.equalsIgnoreCase("B")) {
+                                System.out.println("How much qty:");
+                                int n = sc.nextInt();
+                                sc.nextLine();
+                                double bill = billing.calculatePrice(p, n);
+                                totalbill1 = totalbill1 + bill;
+                                System.out.println("---------------------------");
+                                System.out.println("|Total Payment: " + totalbill1 + " |");
+                                System.out.println("---------------------------");
                                 System.out.println();
-                                System.out.println();
-                                System.out.println("Do you want to exit");
-                                String sug=sc.nextLine();
-                                if(sug.equalsIgnoreCase("yes")){
-                                    return;
-                                }else{
-                                    continue;
+                                System.out.println("Payment Method: ");
+                                System.out.println("1.Gpay");
+                                System.out.println("2.Cash On Delivery");
+                                int Pay = sc.nextInt();
+                                sc.nextLine();
+                                if (Pay == 1) {
+                                    System.out.println("Payment SuccessFully");
+                                    System.out.println("Order Will Delivery as Soon...");
+                                    System.out.println();
+                                    System.out.println();
+                                    System.out.println("Do you want to exit");
+                                    String sug = sc.nextLine();
+                                    if (sug.equalsIgnoreCase("yes")) {
+                                        return;
+                                    } else {
+                                        continue;
+                                    }
+                                }
+                                if (Pay == 2) {
+                                    System.out.println("Your Order Is Placed!!!");
+                                    System.out.println("Order Will Delivery as Soon...");
+                                    System.out.println("Do you want to exit");
+                                    String sug = sc.nextLine();
+                                    if (sug.equalsIgnoreCase("yes")) {
+                                        return;
+                                    } else {
+                                        continue;
+                                    }
                                 }
                             }
-                            if(Pay==2){
-                                System.out.println("Your Order Is Placed!!!");
-                                System.out.println("Order Will Delivery as Soon...");
-                                System.out.println("Do you want to exit");
-                                String sug=sc.nextLine();
-                                if(sug.equalsIgnoreCase("yes")){
-                                    return;
-                                }else{
-                                    continue;
-                                }
-                            }
-                        }
 
-                        //String sym=sc.next();
-                        if(buy.contains("+")) {
-                            index++;
-                        }else if(buy.contains("-")){
-                            index--;
-                        }else{
-                            break;
+                            //String sym=sc.next();
+                            if (buy.contains("+")) {
+                                index1++;
+                            } else if (buy.contains("-")) {
+                                index1--;
+                            } else {
+                                break;
+                            }
+                            if (index1 >= furniture.size()) {
+                                System.out.println("End page \uD83D\uDE4C");
+                            }
                         }
-                        if(index>=mobile.size()){
-                            System.out.println("End page \uD83D\uDE4C");
-                        }
-                }
-                break;
+                        break;
                     case 3:
-
-                        System.out.println("-----------------------------------------------------------------------------------------------");
-                        System.out.println("| Product S.No |   Product Name   |                   Description              |     Price     |");
-                        System.out.println("-----------------------------------------------------------------------------------------------");
-                        for(Product p:Cosmetics){
-
+                        int index2 = 0;
+                        double totalbill2 = 0;
+                        while (index2 < Cosmetics.size()) {
+                            Product p = Cosmetics.get(index2);
+                            System.out.println("-----------------------------------------------------------------------------------------------");
+                            System.out.println("| Product S.No |   Product Name   |                   Description              |     Price     |");
+                            System.out.println("-----------------------------------------------------------------------------------------------");
                             System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
 
-                        }System.out.println("-----------------------------------------------------------------------------------------------");
+                            System.out.println("-----------------------------------------------------------------------------------------------");
+                            System.out.println();
+                            System.out.println("                                                                                  ------------");
+                            System.out.println("                                                                                  |   Buy(B)  |");
+                            System.out.println("                                                                                  ------------");
+                            System.out.println();
+                            System.out.println("To move next page -> enter '+' symbol");
+                            System.out.println("To move previous page -> enter '-' symbol");
+                            String buy = sc.nextLine();
+                            if (buy.equalsIgnoreCase("B")) {
+                                System.out.println("How much qty:");
+                                int n = sc.nextInt();
+                                sc.nextLine();
+                                double bill = billing.calculatePrice(p, n);
+                                totalbill2 = totalbill2 + bill;
+                                System.out.println("---------------------------");
+                                System.out.println("|Total Payment: " + totalbill2 + " |");
+                                System.out.println("---------------------------");
+                                System.out.println();
+                                System.out.println("Payment Method: ");
+                                System.out.println("1.Gpay");
+                                System.out.println("2.Cash On Delivery");
+                                int Pay = sc.nextInt();
+                                sc.nextLine();
+                                if (Pay == 1) {
+                                    System.out.println("Payment SuccessFully");
+                                    System.out.println("Order Will Delivery as Soon...");
+                                    System.out.println();
+                                    System.out.println();
+                                    System.out.println("Do you want to exit");
+                                    String sug = sc.nextLine();
+                                    if (sug.equalsIgnoreCase("yes")) {
+                                        return;
+                                    } else {
+                                        continue;
+                                    }
+                                }
+                                if (Pay == 2) {
+                                    System.out.println("Your Order Is Placed!!!");
+                                    System.out.println("Order Will Delivery as Soon...");
+                                    System.out.println("Do you want to exit");
+                                    String sug = sc.nextLine();
+                                    if (sug.equalsIgnoreCase("yes")) {
+                                        return;
+                                    } else {
+                                        continue;
+                                    }
+                                }
+                            }
 
+                            if (buy.contains("+")) {
+                                index2++;
+                            } else if (buy.contains("-")) {
+                                index2--;
+                            } else {
+                                break;
+                            }
+                            if (index2 >= mobile.size()) {
+                                System.out.println("End page \uD83D\uDE4C");
+                            }
+                            }
+
+                    break;
                     case 4:
-
-                        System.out.println("-----------------------------------------------------------------------------------------------");
-                        System.out.println("| Product S.No |   Product Name   |                   Description              |     Price     |");
-                        System.out.println("------------------------------------------------------------------------------------------------");
-                        for(Product p:Dress){
-
+                        int index3=0;
+                        double totallbill=0;
+                        while(index3<Dress.size()) {
+                            Product p = Dress.get(index3);
+                            System.out.println("-----------------------------------------------------------------------------------------------");
+                            System.out.println("| Product S.No |   Product Name   |                   Description              |     Price     |");
+                            System.out.println("------------------------------------------------------------------------------------------------");
                             System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "    |               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
 
-                        }System.out.println("------------------------------------------------------------------------------------------------");
+                            System.out.println("------------------------------------------------------------------------------------------------");
+                            System.out.println();
+                            System.out.println("                                                                                  ------------");
+                            System.out.println("                                                                                  |   Buy(B)  |");
+                            System.out.println("                                                                                  ------------");
+                            System.out.println();
+                            System.out.println("To move next page -> enter '+' symbol");
+                            System.out.println("To move previous page -> enter '-' symbol");
+                            String buy = sc.nextLine();
+                            if (buy.equalsIgnoreCase("B")) {
+                                System.out.println("How much qty:");
+                                int n = sc.nextInt();
+                                sc.nextLine();
+                                double bill = billing.calculatePrice(p, n);
+                                 totalbill3 = totalbill3 + bill;
+                                System.out.println("---------------------------");
+                                System.out.println("|Total Payment: " + totalbill3 + " |");
+                                System.out.println("---------------------------");
+                                System.out.println();
+                                System.out.println("Payment Method: ");
+                                System.out.println("1.Gpay");
+                                System.out.println("2.Cash On Delivery");
+                                int Pay = sc.nextInt();
+                                sc.nextLine();
+                                if (Pay == 1) {
+                                    System.out.println("Payment SuccessFully");
+                                    System.out.println("Order Will Delivery as Soon...");
+                                    System.out.println();
+                                    System.out.println();
+                                    System.out.println("Do you want to exit");
+                                    String sug = sc.nextLine();
+                                    if (sug.equalsIgnoreCase("yes")) {
+                                        return;
+                                    } else {
+                                        continue;
+                                    }
+                                }
+                                if (Pay == 2) {
+                                    System.out.println("Your Order Is Placed!!!");
+                                    System.out.println("Order Will Delivery as Soon...");
+                                    System.out.println("Do you want to exit");
+                                    String sug = sc.nextLine();
+                                    if (sug.equalsIgnoreCase("yes")) {
+                                        return;
+                                    } else {
+                                        continue;
+                                    }
+                                }
+                            }
 
+                            if (buy.contains("+")) {
+                                index3++;
+                            } else if (buy.contains("-")) {
+                                index3--;
+                            } else {
+                                break;
+                            }
+                            if (index3 >= mobile.size()) {
+                                System.out.println("End page \uD83D\uDE4C");
+                            }
+                        }
 
                     case 5:
                         System.out.println("Do you want to Exit!!!");
