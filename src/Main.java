@@ -111,7 +111,7 @@ public class Main{
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
-                                        System.out.println("---------------------------------------------Developed By Nandhini❤-----------------------------------------");
+                                        System.out.println("---------------------------------------------Developed By Nandhini❤\uFE0F-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -123,7 +123,7 @@ public class Main{
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
-                                        System.out.println("---------------------------------------------Developed By Nandhini❤-----------------------------------------");
+                                        System.out.println("---------------------------------------------Developed By Nandhini❤\uFE0F-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -187,7 +187,7 @@ public class Main{
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
-                                        System.out.println("---------------------------------------------Developed By Nandhini\uFE0F-----------------------------------------");
+                                        System.out.println("---------------------------------------------Developed By Nandhini❤\uFE0F-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -199,7 +199,7 @@ public class Main{
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
-                                        System.out.println("---------------------------------------------Developed By Nandhini\uFE0F-----------------------------------------");
+                                        System.out.println("---------------------------------------------Developed By Nandhini❤\uFE0F-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -262,7 +262,7 @@ public class Main{
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
-                                        System.out.println("---------------------------------------------Developed By Nandhini\uFE0F-----------------------------------------");
+                                        System.out.println("---------------------------------------------Developed By Nandhini❤\uFE0F-----------------------------------------");
 
                                         return;
                                     } else {
@@ -275,7 +275,7 @@ public class Main{
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
-                                        System.out.println("---------------------------------------------Developed By Nandhini\uFE0F-----------------------------------------");
+                                        System.out.println("---------------------------------------------Developed By Nandhini❤\uFE0F-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -339,7 +339,7 @@ public class Main{
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
-                                        System.out.println("---------------------------------------------Developed By Nandhini\uFE0F-----------------------------------------");
+                                        System.out.println("---------------------------------------------Developed By Nandhini❤\uFE0F-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -351,7 +351,7 @@ public class Main{
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
-                                        System.out.println("---------------------------------------------Developed By Nandhini\uFE0F-----------------------------------------");
+                                        System.out.println("---------------------------------------------Developed By Nandhini❤\uFE0F-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
