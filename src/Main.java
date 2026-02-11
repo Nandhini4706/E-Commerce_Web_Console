@@ -78,7 +78,7 @@ public class Main{
                             System.out.println("----------------------------------------------------------------------------------------------");
                             System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
                             System.out.println("----------------------------------------------------------------------------------------------");
-                            System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "|               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
+                            System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "   |           " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
                             System.out.println("-----------------------------------------------------------------------------------------------");
                             System.out.println();
                             System.out.println("                                                                                  ------------");
@@ -89,7 +89,7 @@ public class Main{
                             System.out.println("To move previous page -> enter '-' symbol");
                             String buy = sc.nextLine();
                             if (buy.equalsIgnoreCase("B")) {
-                                System.out.println("How much qty:");
+                                System.out.println("How much quantity:");
                                 int n = sc.nextInt();
                                 sc.nextLine();
                                 double bill = billing.calculatePrice(p, n);
@@ -104,13 +104,14 @@ public class Main{
                                 int Pay = sc.nextInt();
                                 sc.nextLine();
                                 if (Pay == 1) {
-                                    System.out.println("Payment SuccessFully");
+                                    System.out.println("Payment SuccessFully✅");
                                     System.out.println("Order Will Delivery as Soon...");
                                     System.out.println();
                                     System.out.println();
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
+                                        System.out.println("---------------------------------------------Developed By Nandhini❤-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -118,10 +119,11 @@ public class Main{
                                 }
                                 if (Pay == 2) {
                                     System.out.println("Your Order Is Placed!!!");
-                                    System.out.println("Order Will Delivery as Soon...");
+                                    System.out.println("Order Will Delivery as Soon\uD83D\uDD1C...");
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
+                                        System.out.println("---------------------------------------------Developed By Nandhini❤-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -163,7 +165,7 @@ public class Main{
                             System.out.println("To move previous page -> enter '-' symbol");
                             String buy = sc.nextLine();
                             if (buy.equalsIgnoreCase("B")) {
-                                System.out.println("How much qty:");
+                                System.out.println("How much quantity:");
                                 int n = sc.nextInt();
                                 sc.nextLine();
                                 double bill = billing.calculatePrice(p, n);
@@ -178,13 +180,14 @@ public class Main{
                                 int Pay = sc.nextInt();
                                 sc.nextLine();
                                 if (Pay == 1) {
-                                    System.out.println("Payment SuccessFully");
+                                    System.out.println("Payment SuccessFully✅");
                                     System.out.println("Order Will Delivery as Soon...");
                                     System.out.println();
                                     System.out.println();
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
+                                        System.out.println("---------------------------------------------Developed By Nandhini\uFE0F-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -192,10 +195,11 @@ public class Main{
                                 }
                                 if (Pay == 2) {
                                     System.out.println("Your Order Is Placed!!!");
-                                    System.out.println("Order Will Delivery as Soon...");
+                                    System.out.println("Order Will Delivery as Soon \uD83D\uDD1C...");
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
+                                        System.out.println("---------------------------------------------Developed By Nandhini\uFE0F-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -236,7 +240,7 @@ public class Main{
                             System.out.println("To move previous page -> enter '-' symbol");
                             String buy = sc.nextLine();
                             if (buy.equalsIgnoreCase("B")) {
-                                System.out.println("How much qty:");
+                                System.out.println("How much quantity:");
                                 int n = sc.nextInt();
                                 sc.nextLine();
                                 double bill = billing.calculatePrice(p, n);
@@ -251,13 +255,15 @@ public class Main{
                                 int Pay = sc.nextInt();
                                 sc.nextLine();
                                 if (Pay == 1) {
-                                    System.out.println("Payment SuccessFully");
-                                    System.out.println("Order Will Delivery as Soon...");
+                                    System.out.println("Payment SuccessFully✅");
+                                    System.out.println("Order Will Delivery as Soon...\uD83D\uDD1C");
                                     System.out.println();
                                     System.out.println();
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
+                                        System.out.println("---------------------------------------------Developed By Nandhini\uFE0F-----------------------------------------");
+
                                         return;
                                     } else {
                                         continue;
@@ -269,6 +275,7 @@ public class Main{
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
+                                        System.out.println("---------------------------------------------Developed By Nandhini\uFE0F-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -291,7 +298,8 @@ public class Main{
                     break;
                     case 4:
                         int index3=0;
-                        double totallbill=0;
+                        double totalbill3=0;
+                        sc.nextLine();
                         while(index3<Dress.size()) {
                             Product p = Dress.get(index3);
                             System.out.println("-----------------------------------------------------------------------------------------------");
@@ -331,6 +339,7 @@ public class Main{
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
+                                        System.out.println("---------------------------------------------Developed By Nandhini\uFE0F-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -342,6 +351,7 @@ public class Main{
                                     System.out.println("Do you want to exit");
                                     String sug = sc.nextLine();
                                     if (sug.equalsIgnoreCase("yes")) {
+                                        System.out.println("---------------------------------------------Developed By Nandhini\uFE0F-----------------------------------------");
                                         return;
                                     } else {
                                         continue;
@@ -365,13 +375,10 @@ public class Main{
                         System.out.println("Do you want to Exit!!!");
                         String s1=sc.next();
                         if(s1.contains("yes")){
-                            System.out.println("------------------------Developed BY Nandhini---------------------------");
+                            System.out.println("------------------------Developed BY Nandhini❤\uFE0F---------------------------");
                             return;
                         }
                 }
-
-
-
             }
         }
     }
