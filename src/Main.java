@@ -3,7 +3,6 @@ import Model.Login;
 import Model.User;
 import Model.Product;
 import Services.Billing;
-import Services.ProductService;
 public class Main{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -22,6 +21,7 @@ public class Main{
         Dress.add(new Product(1,"Kurthi Set","Cotton",500));
 
         Billing billing=new Billing();
+        ArrayList<Product>cart=new ArrayList<>();
 
         boolean boo = false;
         System.out.println("-------------------------Welcome To Our WebSite-------------------------");
@@ -63,7 +63,8 @@ public class Main{
                 System.out.println("2. Furniture");
                 System.out.println("3. Cosmetic");
                 System.out.println("4. Dress");
-                System.out.println("5.Exit");
+                System.out.println("5. View Cart");
+                System.out.println("6. Exit");
                 System.out.println("----------------------------------------------------------------------");
 
               System.out.println("Enter choice: ");
@@ -81,9 +82,9 @@ public class Main{
                             System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "   |           " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
                             System.out.println("-----------------------------------------------------------------------------------------------");
                             System.out.println();
-                            System.out.println("                                                                                  ------------");
-                            System.out.println("                                                                                  |   Buy(B)  |");
-                            System.out.println("                                                                                  ------------");
+                            System.out.println("                                                       -----------                ------------");
+                            System.out.println("                                                       | Cart(C) |                |   Buy(B)  |");
+                            System.out.println("                                                       -----------                ------------");
                             System.out.println();
                             System.out.println("To move next page -> enter '+' symbol");
                             System.out.println("To move previous page -> enter '-' symbol");
@@ -129,9 +130,13 @@ public class Main{
                                         continue;
                                     }
                                 }
+                            }else if(buy.equalsIgnoreCase("C")) {
+                               cart.add(p);
+                                System.out.println("Successfully add to cart!!!");
+                            }else{
+                                        continue;
                             }
 
-                            //String sym=sc.next();
                             if (buy.contains("+")) {
                                 index++;
                             } else if (buy.contains("-")) {
@@ -207,7 +212,6 @@ public class Main{
                                 }
                             }
 
-                            //String sym=sc.next();
                             if (buy.contains("+")) {
                                 index1++;
                             } else if (buy.contains("-")) {
@@ -370,8 +374,28 @@ public class Main{
                                 System.out.println("End page \uD83D\uDE4C");
                             }
                         }
-
+                          break;
                     case 5:
+                        System.out.println("--------------------------------------------------------------------------------------");
+                        System.out.println("|Product Name  |                   Description                      |      Price     |");
+                        System.out.println("--------------------------------------------------------------------------------------");
+
+                        if(cart.isEmpty()){
+                            System.out.println("Empty Cart");
+                            System.out.println("-----");
+                            System.out.println("    |");
+                            System.out.println("  ---");
+                            System.out.println("  |");
+                            System.out.println("  -");
+                            break;
+                        }
+                        for(Product c:cart){
+                            System.out.println("|   "+c.getProductName()+"     |           " +c.getProductDiscription()+"          |      " +c.getProductPrice()+"    |");
+                            break;
+                        }
+                        System.out.println("----------------------------------------------------------------------------------------");
+
+                    case 6:
                         System.out.println("Do you want to Exit!!!");
                         String s1=sc.next();
                         if(s1.contains("yes")){
