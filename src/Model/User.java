@@ -22,14 +22,4 @@ public class User {
         return userId;
     }
 
-    public static class Billing {
-        private int billingId;
-
-        private int totalPrice;
-
-        public double calculateBill(Product product, int quantity){
-            totalPrice=product.getProductPrice() * quantity;
-            return totalPrice;
-        }
-    }
 }
