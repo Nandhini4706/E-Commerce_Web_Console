@@ -159,7 +159,7 @@ public class Main{
                             System.out.println("----------------------------------------------------------------------------------------------");
                             System.out.println("|Product S.No|   Product Name   |                   Description              |     Price     |");
                             System.out.println("----------------------------------------------------------------------------------------------");
-                            System.out.println("|      " + p.getProductId() + "     |       " + p.getProductName() + "|               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
+                            System.out.println("|      " + p.getProductId() + "     |        " + p.getProductName() + "|               " + p.getProductDiscription() + "             |   " + p.getProductPrice() + "      |");
                             System.out.println("-----------------------------------------------------------------------------------------------");
                             System.out.println();
                             System.out.println("                                                                                  ------------");
